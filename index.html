@@ -5,10 +5,12 @@
 <head>
 <title>Photoblog</title>
 <link rel="stylesheet" type="text/css" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width" />
 </head>
 
 
-<body>
+<body onload="startanimations()">
 
 <div id="hamburgermenu">
   <div id="innermenu">
@@ -18,24 +20,34 @@
   </div>
 </div>
 
-<div class="masonry">
+<div id="titlecontainer">
+<div id="phototitle"><span>p</span><span>h</span><span>o</span><span>t</span><span>o</span><span>b</span><span>l</span><span>o</span><span>g</span></div>
+</div>
+
+<div id="col1" class="masonry">
 <div class="eachimage"><img src="image00001.jpg" alt=""></div>
 <div class="eachimage"><img src="image00002.jpg" alt=""></div>
 <div class="eachimage"><img src="image00003.jpg" alt=""></div>
+<div class="eachimage"><img src="image00013.jpg" alt=""></div>
 </div>
-<div class="masonry">
+<div id="col2" class="masonry">
 <div class="eachimage"><img src="image00004.jpg" alt=""></div>
 <div class="eachimage"><img src="image00005.jpg" alt=""></div>
 <div class="eachimage"><img src="image00006.jpg" alt=""></div>
 </div>
-<div class="masonry">
+<div id="col3" class="masonry">
 <div class="eachimage"><img src="image00007.jpg" alt=""></div>
 <div class="eachimage"><img src="image00008.jpg" alt=""></div>
+<div class="eachimage"><img src="image00012.jpg" alt=""></div>
+</div>
+<div id="col4" class="masonry">
+<div class="eachimage"><img src="image00010.jpg" alt=""></div>
+<div class="eachimage"><img src="image00011.jpg" alt=""></div>
 <div class="eachimage"><img src="image00009.jpg" alt=""></div>
 </div>
 
 
-
+<script src="designs.js"></script>
 
 </body>
 
