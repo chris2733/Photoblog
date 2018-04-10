@@ -109,6 +109,8 @@ function imgchosen(chosenid) {
 
   slideIndex = indexno + 1;
 
+  showSlides(slideIndex);
+
   /*moving the slides */
   function moveSlide(n) {
     showSlides(slideIndex += n);
@@ -125,7 +127,12 @@ function imgchosen(chosenid) {
     x[slideIndex-1].style.display = "block";
   }
 
-  showSlides(slideIndex);
+  $(".slidenext").click(function () {
+    moveSlide(1);
+  });
+  $(".slideprev").click(function () {
+    moveSlide(-1);
+  });
 
 
 };
