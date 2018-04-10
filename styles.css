@@ -214,6 +214,7 @@ body {
   float: left;
   overflow: hidden;
   opacity: 0;
+  max-height: 450px;
 }
 
 .masonry img {
@@ -265,8 +266,10 @@ body {
 
 img {
   display: block;
-  width: 100%;
-  height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 80vh;
 }
 #lightbox {
   position: fixed;
@@ -278,28 +281,37 @@ img {
 #slider {
   position: relative;
   overflow: hidden;
-  margin: 5% auto;
-  height: 90vh;
+  margin: 3% auto;
+  height: 95vh;
   width: 90vw;
 }
 #slider ul {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  height: 100%;
 }
 #slider li {
   position: relative;
   display: block;
   float: left;
-  margin: 0;
+  margin: auto;
   padding: 0;
-  height: 90vh;
+  height: auto;
   width: 100%;
+  align-self: center;
 }
 .slidertext {
   display: block;
-  color: white;
+  color: rgba(255,255,255, 0.75);
   height: 10%;
+  margin: auto;
+  max-width: 668px;
+  font-family: 'open sans';
+}
+.slidertext h3 {
+  text-align: center;
 }
 .slidebuttons {
   color: rgba(255, 255, 255, 0.85);
@@ -336,7 +348,23 @@ img {
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
 }
+.fadeanim {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-direction: both;
+}
 
+@-webkit-keyframes fade {
+  from {opacity: .2}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .2}
+  to {opacity: 1}
+}
 
 
 
