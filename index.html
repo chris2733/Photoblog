@@ -5,12 +5,13 @@
 <head>
 <title>Photoblog</title>
 <link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Montserrat" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 
-<body onload="startanimations()">
+<body onload="">
 
 <div id="hamburgermenu">
   <div id="innermenu">
@@ -19,32 +20,77 @@
     <span></span>
   </div>
 </div>
+<div id="sidemenu" class="slidesidemenuin">
+  <ul>
+    <li>Home</li>
+    <li>Archive</li>
+    <li>Albums</li>
+  </ul>
+</div>
+
+
+
 
 <div id="titlecontainer">
 <div id="phototitle"><span>p</span><span>h</span><span>o</span><span>t</span><span>o</span><span>b</span><span>l</span><span>o</span><span>g</span></div>
 </div>
 
 <div id="col1" class="masonry">
-<div class="eachimage"><img src="image00001.jpg" alt=""></div>
-<div class="eachimage"><img src="image00002.jpg" alt=""></div>
-<div class="eachimage"><img src="image00003.jpg" alt=""></div>
-<div class="eachimage"><img src="image00013.jpg" alt=""></div>
+<div id="ansun" class="eachimage" onClick="imgchosen(this.id)"><img src="ansun.jpg" alt=""></div>
+<div id="choppedwood" class="eachimage" onClick="imgchosen(this.id)"><img src="choppedwood.jpg" alt=""></div>
+<div id="moss" class="eachimage" onClick="imgchosen(this.id)"><img src="moss.jpg" alt=""></div>
+<div id="oldnnew" class="eachimage" onClick="imgchosen(this.id)"><img src="oldnnew.jpg" alt=""></div>
 </div>
 <div id="col2" class="masonry">
-<div class="eachimage"><img src="image00004.jpg" alt=""></div>
-<div class="eachimage"><img src="image00005.jpg" alt=""></div>
-<div class="eachimage"><img src="image00006.jpg" alt=""></div>
+<div id="higraffiti" class="eachimage" onClick="imgchosen(this.id)"><img src="higraffiti.jpg" alt=""></div>
+<div id="gull" class="eachimage" onClick="imgchosen(this.id)"><img src="gull.jpg" alt=""></div>
+<div id="sunriseemei" class="eachimage" onClick="imgchosen(this.id)"><img src="sunriseemei.jpg" alt=""></div>
 </div>
 <div id="col3" class="masonry">
-<div class="eachimage"><img src="image00007.jpg" alt=""></div>
-<div class="eachimage"><img src="image00008.jpg" alt=""></div>
-<div class="eachimage"><img src="image00012.jpg" alt=""></div>
+<div id="beach" class="eachimage" onClick="imgchosen(this.id)"><img src="beach.jpg" alt=""></div>
+<div id="writing" class="eachimage" onClick="imgchosen(this.id)"><img src="writing.jpg" alt=""></div>
+<div id="church1" class="eachimage" onClick="imgchosen(this.id)"><img src="church1.jpg" alt=""></div>
 </div>
 <div id="col4" class="masonry">
-<div class="eachimage"><img src="image00010.jpg" alt=""></div>
-<div class="eachimage"><img src="image00011.jpg" alt=""></div>
-<div class="eachimage"><img src="image00009.jpg" alt=""></div>
+<div id="daffodil" class="eachimage" onClick="imgchosen(this.id)"><img src="daffodil.jpg" alt=""></div>
+<div id="buddha1" class="eachimage" onClick="imgchosen(this.id)"><img src="buddha1.jpg" alt=""></div>
+<div id="lake" class="eachimage" onClick="imgchosen(this.id)"><img src="lake.jpg" alt=""></div>
 </div>
+
+
+<div id="lightbox">
+  <div id="slider">
+      <a href="#" class="slidebuttons slidenext">></a>
+      <a href="#" class="slidebuttons slideprev"><</a>
+      <a href="#"id="closelightbox">X</a>
+      <ul>
+        <li id="ansun_light" class="lightboxslides">
+          <img src="ansun.jpg" alt="">
+          <div class="slidertext">
+            <h3>Ansun Bridge<h3>
+            <p>Blah blah blahblahblahblahblah</p>
+          </div>
+        </li>
+        <li id="choppedwood_light" class="lightboxslides">
+          <img src="choppedwood.jpg" alt="">
+          <div class="slidertext">
+            <h3>Wood<h3>
+            <p>Blah blah blahblahblahblahblah</p>
+          </div>
+        </li>
+        <li id="moss_light" class="lightboxslides">
+          <img src="moss.jpg" alt="">
+          <div class="slidertext">
+            <h3>Moss<h3>
+            <p>Blah blah blahblahblahblahblah</p>
+          </div>
+        </li>
+      </ul>
+  </div>
+</div>
+
+
+
 
 
 <script src="designs.js"></script>
