@@ -4,44 +4,279 @@
   border: 0;
   outline: 0;
   background: transparent;
+  cursor: url(cursor1.png), default !important;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #465c7bff;
 }
 
 body {
   background-color: #0a0a0a;
   position: relative;
+  overflow-x: hidden;
 }
+#mainbodyofblog {
+  background-color: #0a0a0a;
+  display: none;
+  position: relative;
+}
+
+
+/* landing page stuff */
+.hide {
+   display: none;
+}
+#landingpagecontainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: #465c7bff;
+  overflow: hidden;
+  display: none;
+}
+#landingpage {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   background-color: #465c7bff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow: ;
+   z-index: 100;
+   transform: scale(0.5);
+}
+.buttons {
+   z-index: 100;
+}
+
+
+/*positioning the svg in centre */
+svg {
+   position: absolute;
+   margin: auto;
+   height: 300px;
+}
+/* making sure all paths have their origin in their own centres - using inkscape outside this */
+#mainorangerect {
+   transform-origin: 50% 50%;
+}
+#centrerectlarge {
+   transform-origin: 50% 50%;
+}
+#orangerecttop3, #orangerecttop2, #orangerecttop1 {
+   transform-origin: 0 18%;
+}
+#orangerecttopright {
+   transform-origin: 0 22%;
+}
+#bottomrectlarge {
+   transform-origin: 0 85%;
+}
+#bottomrectsmall {
+   transform-origin: 0 85%;
+}
+/* function for elements slitting in horizontally */
+.popiny {
+	        animation: popiny 0.5s cubic-bezier(.44,.28,.65,1.27);
+   display: initial;
+}
+@keyframes popiny {
+  0% {
+            transform: scaleY(0);
+  }
+   60% {
+            transform: scaleY(1.05);
+  }
+   80% {
+            transform: scaleY(0.9);
+  }
+  100% {
+            transform: scaleY(1);
+  }
+}
+
+#topleftring {
+   transform-origin: 7.25% 15.23%;
+}
+#topblueysquare {
+   transform-origin: 86.7% 22%;
+}
+#lensshade {
+   transform-origin: 59.99% 53.73%;
+}
+#lenscircorange, #pinklens, #purplelens, #blueylens, #lensglare1, #lensglare2 {
+   transform-origin: 66.5% 49.77%;
+}
+#littleorangecirccentre {
+   transform-origin: 37.3% 34.48%;
+}
+/* function for elements popping in from centre */
+.popinxy {
+	        animation: popinxy 0.5s cubic-bezier(.44,.28,.65,1.27);
+   display: initial;
+}
+@keyframes popinxy {
+  0% {
+            transform: scale(0);
+  }
+   60% {
+            transform: scale(1.02);
+  }
+   80% {
+            transform: scale(0.97);
+  }
+  100% {
+            transform: scale(1);
+  }
+}
+/* editing the flash origins and positions */
+#firstflashsquare1, .firstflashsquare1bits {
+   transform-origin: 53.66% 15.67%;
+   stroke-width: 0;
+}
+#firstflashsquare2, .firstflashsquare2bits {
+   transform-origin: 58.141% 13.04%;
+   stroke-width: 0;
+}
+/* animation for flash squares */
+.flashenlarge {
+	        animation: flashenlarge 0.15s cubic-bezier(.44,.28,.65,1.27);
+   display: initial;
+}
+@keyframes flashenlarge {
+  0% {
+      stroke-width: 0;
+   }
+  2% {
+     display: initial;
+     transform: scale(1) rotate(0deg);
+     stroke-width: 0.3;
+  }
+  99% {
+     transform: scale(5) rotate(90deg);
+     stroke-width: 0.02;
+  }
+   100% {
+      stroke-width: 0;
+   }
+}
+/* animation for flash lines coming off */
+.flashenlargebits {
+	        animation: flashenlargebits 0.07s cubic-bezier(.44,.28,.65,1.27);
+   display: initial;
+}
+@keyframes flashenlargebits {
+  0% {
+      stroke-width: 0;
+   }
+  2% {
+     display: initial;
+     transform: scale(1);
+     stroke-width: 0.03;
+  }
+  99% {
+     transform: scale(1.1);
+     stroke-width: 0.09;
+  }
+   100% {
+      stroke-width: 0;
+   }
+}
+
+
+/* animation for button pressing */
+.flashpress {
+   animation: flashpress 0.4s linear;
+}
+
+@keyframes flashpress {
+   0% {
+      transform: translateY(0);
+   }
+   50% {
+      transform: translateY(3%);
+   }
+   100% {
+      transform: translateY(0);
+   }
+}
+
+/* making photograph container, top is just where the photo will appear, in bottomrectsmall */
+/* to get sizing just in css, photocontainer 1 is set to 50vh, photocontainer2 is set to the measure of 50vh to bottomrectsmall, using inkscape */
+#photocontainer1 {
+   position: absolute;
+   background-color: none;
+   height: 700px;
+   width: 300px;
+   top: 50vh;
+   transform: translateX(4%);
+}
+#photocontainer2 {
+   position: relative;
+   background-color: none;
+   height: 700px;
+   width: 300px;
+   top: 119px;
+   overflow: hidden;
+}
+#photograph {
+   position: absolute;
+   height: 210px;
+   width: 270px;
+   background-color: rgb(239, 237, 239);
+   box-sizing: border-box;
+   padding: 3%;
+   top: -210px;
+}
+#photographinner {
+   position: relative;
+   background-color: rgb(20, 20, 20);
+   height: 100%;
+   width: 100%;
+}
+/* moving the photo */
+.movephotodown {
+   animation: slidephotoout 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+@keyframes slidephotoout {
+   from {
+      transform: translateY(0);
+   }
+   to {
+      transform: translateY(350px);
+   }
+}
+
+/* final animation, move photo up to middle and expand photocontainer2 to fill window, since photo has an animtion already */
+.fillwindow {
+   animation: photobig 1.4s cubic-bezier(0.895, 0.03, 0.685, 0.22) both;
+}
+@keyframes photobig {
+   from {
+      transform: scale(1);
+   }
+   to {
+      transform: translateY(300%) scale(20);
+   }
+};
+
+
+
 
 
 
 
 /* hamburger menu */
-#hamburgermenu {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  height: 60px;
-  width: 60px;
-  background-color: rgba(0, 0, 0, 0.81);
-  z-index: 12;
-  box-sizing: border-box;
-  padding: 20px;
-  border-radius: 50%;
-}
-#hamburgermenu #innermenu {
-  position: absolute;
-  height: 20px;
-  width: 20px;
-}
-#hamburgermenu span {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  display: inline-block;
-  background-color: rgba(215, 215, 215, 0.81);
-  height: 3px;
-  width: 100%;
-}
+
 #hamburgermenu span:nth-of-type(1) {
   top: 0;
 }
@@ -68,6 +303,33 @@ body {
   transition: 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
 
+#hamburgermenu {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  height: 60px;
+  width: 60px;
+  z-index: 500;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 50%;
+}
+#hamburgermenu #innermenu {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+#hamburgermenu span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: inline-block;
+  background-color: rgba(215, 215, 215, 0.81);
+  height: 3px;
+  width: 100%;
+}
+
 
 /* the popout menu when you click the hamburger */
 #sidemenu {
@@ -90,6 +352,7 @@ body {
   color: rgba(26, 26, 26, 0.9);
   list-style-type: none;
   line-height: 2.5rem;
+  width: 0;
 }
 
 .slidesidemenuout {
@@ -200,7 +463,7 @@ body {
     float: left;
   }
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
 	 .masonry {
     width: 100%;
     float: left;
@@ -210,11 +473,12 @@ body {
 .eachimage {
   position: relative;
   width: 100%;
-  display: inline-block;
+  display: flex;
   float: left;
   overflow: hidden;
   opacity: 0;
-  max-height: 450px;
+  max-height: 350px;
+  align-items: center;
 }
 
 .masonry img {
@@ -264,7 +528,7 @@ body {
   }
 }
 
-img {
+.lightboxslides img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -281,7 +545,7 @@ img {
 #slider {
   position: relative;
   overflow: hidden;
-  margin: 3% auto;
+  margin: 2% auto;
   height: 95vh;
   width: 90vw;
 }
@@ -299,14 +563,13 @@ img {
   margin: auto;
   padding: 0;
   height: auto;
-  width: 100%;
   align-self: center;
 }
 .slidertext {
   display: block;
   color: rgba(255,255,255, 0.75);
   height: 10%;
-  margin: auto;
+  margin: 1% auto;
   max-width: 668px;
   font-family: 'open sans';
 }
@@ -320,10 +583,10 @@ img {
   width: auto;
   background-color: rgba(0, 0, 0, 0.75);
   box-sizing: border-box;
-  padding: 4% 3%;
+  padding: 3% 2%;
   text-decoration: none;
   z-index: 20;
-  font-size: 2em;
+  font-size: 1.5rem;
   top: 40%;
 }
 .slidenext {

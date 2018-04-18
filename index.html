@@ -12,7 +12,64 @@
 </head>
 
 
-<body onload="">
+<body onload="startallanims()">
+
+
+  <!-- inspired by https://dribbble.com/shots/1653958-Vacation -->
+  <div id="landingpagecontainer">
+  <div id="landingpage">
+
+  <svg viewbox="0 0 11.7 7.8" class="" id="svgcamera">
+     <style>
+        .orangebits{fill:#ffb156}
+        .blueybits{fill:#665c77}
+     </style>
+     <path d="m 1.2381241,1.2089033 h 9.2285739 c 0.149136,0 0.269199,0.120883 0.269199,0.2710381 v 4.8917562 c 0,0.1501551 -0.120063,0.2710381 -0.269199,0.2710381 H 1.2381241 c -0.1491363,0 -0.26919908,-0.120883 -0.26919908,-0.2710381 V 1.4799414 c 0,-0.1501551 0.12006278,-0.2710381 0.26919908,-0.2710381 z" id="mainorangerect" class="orangebits"/>
+     <path d="M 0.96892502,1.8328879 H 10.735897 V 5.9204344 H 0.96892502 Z" id="centrerectlarge" class="blueybits"/>
+     <path d="m 8.0291033,0.783078 h 2.7067937 c 0,0 0,0 0,0 v 2.1241365 c 0,0 0,0 0,0 H 8.0291033 c 0,0 0,0 0,0 V 0.783078 c 0,0 0,0 0,0 z" id="orangerecttopright"class="orangebits"/>
+        <path d="m 5.5974509,0.53180276 h 4.8871711 c 0.139206,0 0.251275,0.11206864 0.251275,0.25127502 V 1.2803314 c 0,0.1392066 -0.112069,0.2512751 -0.251275,0.2512751 H 5.5974509 c -0.1392066,0 -0.2512751,-0.1120685 -0.2512751,-0.2512751 V 0.78307778 c 0,-0.13920638 0.1120685,-0.25127502 0.2512751,-0.25127502 z" id="orangerecttop3"class="orangebits"/>
+        <path d="m 3.5734921,0.53180276 h 1.1196152 c 0.1392247,0 0.2513086,0.11208349 0.2513086,0.25130825 V 1.2802983 c 0,0.1392248 -0.1120838,0.2513082 -0.2513086,0.2513082 H 3.5734921 c -0.1392247,0 -0.2513081,-0.1120834 -0.2513081,-0.2513082 V 0.78311101 c 0,-0.13922476 0.1120834,-0.25130825 0.2513081,-0.25130825 z" id="orangerecttop2"class="orangebits"/>
+        <path d="m 1.5674882,0.53180276 h 1.1543785 c 0.139225,0 0.2513085,0.0982509 0.2513085,0.22029381 V 1.1879251 c 0,0.1220428 -0.1120835,0.2202938 -0.2513085,0.2202938 H 1.5674882 C 1.4282635,1.4082189 1.31618,1.3099679 1.31618,1.1879251 V 0.7520966 c 0,-0.12204288 0.1120835,-0.22029381 0.2513082,-0.22029384 z" id="orangerecttop1"class="orangebits"/>
+        <path d="m 1.5225189,6.6427379 h 8.5382421 c 0.01116,0 0.02014,0.00181 0.02014,0.00405 v 0.7500192 c 0,0.00226 -0.009,0.00405 -0.02014,0.00405 H 1.5225189 c -0.01116,0 -0.020144,-0.00181 -0.020144,-0.00405 V 6.6467906 c 0,-0.00226 0.00899,-0.00405 0.020144,-0.00405 z" id="bottomrectlarge" class="blueybits"/>
+     <path d="m 1.9274315,6.8748969 h 7.5920409 c 0.00992,0 0.017911,6.361e-4 0.017911,0.00143 v 0.263649 c 0,7.951e-4 -0.00799,0.00143 -0.017911,0.00143 H 1.9274315 c -0.00992,0 -0.017911,-6.361e-4 -0.017911,-0.00143 V 6.8763322 c 0,-7.951e-4 0.00799,-0.00143 0.017911,-0.00143 z" id="bottomrectsmall" fill="#4a405b"/>
+        <path d="M 8.3619003,0.88592108 H 10.388326 V 2.5576136 H 8.3619003 Z" id="topblueysquare" class="blueybits"/>
+     <path d="M 9.3622736,4.2022781 A 2.3590187,2.3590187 0 0 1 6.9930083,6.5501357 2.3590187,2.3590187 0 0 1 4.6442802,4.181734 2.3590187,2.3590187 0 0 1 7.0118197,1.8321364 2.3590187,2.3590187 0 0 1 9.3622871,4.1988128 Z" id="lensshade" fill="#5b361366"/>
+        <path d="M 9.3622736,3.893273 A 2.3590187,2.3590187 0 0 1 6.9930083,6.2411306 2.3590187,2.3590187 0 0 1 4.6442802,3.8727286 2.3590187,2.3590187 0 0 1 7.0118197,1.523131 2.3590187,2.3590187 0 0 1 9.3622871,3.8898074" id="lenscircorange"class="orangebits"/>
+        <path d="M 4.6286364,2.5566983 A 0.32205099,0.32205099 0 0 1 4.3051864,2.8772256 0.32205099,0.32205099 0 0 1 3.9845405,2.5538936 0.32205099,0.32205099 0 0 1 4.3077544,2.2331287 0.32205099,0.32205099 0 0 1 4.6286379,2.5562251" id="littleorangecirccentre"class="orangebits"/>
+     <path d="M 9.0532706,3.8918138 A 2.0500131,2.0500131 0 0 1 6.9943536,5.9321277 2.0500131,2.0500131 0 0 1 4.9532834,3.8739606 2.0500131,2.0500131 0 0 1 7.0107012,1.8321348 2.0500131,2.0500131 0 0 1 9.0532828,3.8888024" id="pinklens" fill="#db7e7b"/>
+     <path d="M 8.761337,3.8904355 A 1.7580764,1.7580764 0 0 1 6.995625,5.6401938 1.7580764,1.7580764 0 0 1 5.245218,3.8751246 1.7580764,1.7580764 0 0 1 7.0096444,2.1240697 1.7580764,1.7580764 0 0 1 8.7613472,3.8878528" id="purplelens" fill="#e8e3de44"/>
+     <path d="M 8.3905544,3.8803835 A 1.3872688,1.3872688 0 0 1 6.9972604,5.2610889 1.3872688,1.3872688 0 0 1 5.6160432,3.8683019 1.3872688,1.3872688 0 0 1 7.008323,2.4865734 1.3872688,1.3872688 0 0 1 8.3905624,3.8783456" id="blueylens" fill="#685d78" />
+     <path d="M 7.0703957,3.4475145 A 0.50412206,0.50412206 0 0 1 6.5640841,3.9492516 0.50412206,0.50412206 0 0 1 6.0621611,3.4431241 0.50412206,0.50412206 0 0 1 6.568104,2.9410157 0.50412206,0.50412206 0 0 1 7.0703986,3.4467742" id="lensglare1" fill="#f2eee6"/>
+     <path d="M 7.7570491,4.4784365 A 0.17637135,0.17637135 0 0 1 7.5799114,4.6539735 0.17637135,0.17637135 0 0 1 7.4043098,4.4769007 0.17637135,0.17637135 0 0 1 7.5813181,4.3012336 0.17637135,0.17637135 0 0 1 7.75705,4.4781776" id="lensglare2" fill="#f2eee6"/>
+     <path d="M 1.1023594,1.1895986 A 0.25559986,0.25559986 0 0 1 0.84564947,1.4439891 0.25559986,0.25559986 0 0 1 0.59116448,1.1873723 0.25559986,0.25559986 0 0 1 0.84768772,0.93279354 0.25559986,0.25559986 0 0 1 1.102361,1.189223" id="topleftring" class="" fill="none" stroke="#ffb059" stroke-width="0.27097413" />
+     <path d="M 6.1529445,1.1109098 H 6.3766134 V 1.334579 H 6.1529445 Z" id="firstflashsquare1" class="" fill="none" stroke="#ffffffbb" stroke-width=""/>
+     <path d="M 6.675626,0.90584563 H 6.8992952 V 1.1295148 H 6.675626 Z" id="firstflashsquare2" class="" fill="none" stroke="#ffffffbb" stroke-width=""/>
+     <path d="M 5.7729927,1.4452822 5.5326632,1.600949" id="" class="firstflashsquare1bits" fill="#ffffffbb" stroke="#ffffffbb" stroke-width=""/>
+     <path d="M 6.468806,1.7323464 6.52919,1.9318953" id="" class="firstflashsquare1bits" fill="#ffffffbb" stroke="#ffffffbb" stroke-width=""/>
+     <path d="M 6.5887864,0.99570996 6.731887,0.93201087" id="" class="firstflashsquare1bits" fill="#ffffffbb" stroke="#ffffffbb" stroke-width=""/>
+     <path d="M 5.7739579,0.91753417 5.6004878,0.80188738" id="" class="firstflashsquare1bits" fill="#ffffffbb" stroke="#ffffffbb" stroke-width=""/>
+     <path d="M 6.3849438,1.1820708 6.144614,1.3377377" id="" class="firstflashsquare2bits" fill="#ffffffbb" stroke="#ffffffbb" stroke-width=""/>
+     <path d="m 7.0807568,1.469135 0.060384,0.1995489" id="" class="firstflashsquare2bits" fill="#ffffffbb" stroke="#ffffffbb" stroke-width=""/>
+     <path d="M 7.2007372,0.7324983 7.3438381,0.66879938" id="" class="firstflashsquare2bits" fill="#ffffffbb" stroke="#ffffffbb" stroke-width=""/>
+     <path d="M 6.3859087,0.65432255 6.2124389,0.53867585" id="" class="firstflashsquare2bits" fill="#ffffffbb" stroke="#ffffffbb" stroke-width=""/>
+  </svg>
+
+     <div id="photocontainer1">
+        <div id="photocontainer2">
+         <div id="photograph">
+            <div id="photographinner">
+            </div>
+         </div>
+     </div>
+     </div>
+
+  </div>
+</div>
+
+
+
+<div id="mainbodyofblog">
+
 
 <div id="hamburgermenu">
   <div id="innermenu">
@@ -23,7 +80,7 @@
 </div>
 <div id="sidemenu" class="slidesidemenuin">
   <ul>
-    <li>Home</li>
+    <a href="http://www.chris-law.uk"><li>Home</li></a>
     <li>Archive</li>
     <li>Albums</li>
   </ul>
@@ -39,13 +96,14 @@
 <div id="col1" class="masonry">
 <div id="ansun" class="eachimage" onClick="imgchosen(this.id)"><img src="ansun.jpg" alt=""></div>
 <div id="choppedwood" class="eachimage" onClick="imgchosen(this.id)"><img src="choppedwood.jpg" alt=""></div>
-<div id="moss" class="eachimage" onClick="imgchosen(this.id)"><img src="moss.jpg" alt=""></div>
+<div id="gull" class="eachimage" onClick="imgchosen(this.id)"><img src="gull.jpg" alt=""></div>
 <div id="oldnnew" class="eachimage" onClick="imgchosen(this.id)"><img src="oldnnew.jpg" alt=""></div>
 </div>
 <div id="col2" class="masonry">
 <div id="higraffiti" class="eachimage" onClick="imgchosen(this.id)"><img src="higraffiti.jpg" alt=""></div>
-<div id="gull" class="eachimage" onClick="imgchosen(this.id)"><img src="gull.jpg" alt=""></div>
+<div id="lightbeacon" class="eachimage" onClick="imgchosen(this.id)"><img src="lightbeacon.jpg" alt=""></div>
 <div id="sunriseemei" class="eachimage" onClick="imgchosen(this.id)"><img src="sunriseemei.jpg" alt=""></div>
+<div id="moss" class="eachimage" onClick="imgchosen(this.id)"><img src="moss.jpg" alt=""></div>
 </div>
 <div id="col3" class="masonry">
 <div id="beach" class="eachimage" onClick="imgchosen(this.id)"><img src="beach.jpg" alt=""></div>
@@ -69,91 +127,98 @@
               <img src="ansun.jpg" alt="">
               <div class="slidertext">
                 <h3>Ansun Bridge<h3>
-                <p>Blah blah blahblahblahblahblah</p>
+                <p>Across the Jinjiang river, in the centre of Chengdu, lit up every night</p>
               </div>
             </li>
             <li id="choppedwood_light" class="lightboxslides fadeanim">
               <img src="choppedwood.jpg" alt="">
               <div class="slidertext">
-                <h3>Wood<h3>
-                <p>Blah blah blahblahblahblahblah</p>
+                <h3>Chopping wood<h3>
+                <p>Getting all of this ready for winter in Nantes</p>
+              </div>
+            </li>
+            <li id="gull_light" class="lightboxslides fadeanim">
+              <img src="gull.jpg" alt="">
+              <div class="slidertext">
+                <h3>Seagull<h3>
+                <p>Perfectly timed photo, took in Kaikoura, NZ</p>
+              </div>
+            </li>
+            <li id="oldnew_light" class="lightboxslides fadeanim">
+              <img src="oldnnew.jpg" alt="">
+              <div class="slidertext">
+                <h3>Old & the new<h3>
+                <p>Caught in between the ancient walled city of Xian and modern China</p>
+              </div>
+            </li>
+            <li id="higraffiti_light" class="lightboxslides fadeanim">
+              <img src="higraffiti.jpg" alt="">
+              <div class="slidertext">
+                <h3>Hi<h3>
+                <p>Modern Cardiff</p>
+              </div>
+            </li>
+            <li id="lightbeacon_light" class="lightboxslides fadeanim">
+              <img src="lightbeacon.jpg" alt="">
+              <div class="slidertext">
+                <h3>Beacon<h3>
+                <p>Drum tower, one of several in Xian</p>
+              </div>
+            </li>
+            <li id="sunriseemei_light" class="lightboxslides fadeanim">
+              <img src="sunriseemei.jpg" alt="">
+              <div class="slidertext">
+                <h3>Sunrise<h3>
+                <p>Perfect red sunrise above the clouds on Mount Emei, China</p>
               </div>
             </li>
             <li id="moss_light" class="lightboxslides fadeanim">
               <img src="moss.jpg" alt="">
               <div class="slidertext">
                 <h3>Moss<h3>
-                <p>Blah blah blahblahblahblahblah</p>
-              </div>
-            </li>
-            <li id="oldnew_light" class="lightboxslides fadeanim">
-              <img src="oldnnew.jpg" alt="">
-              <div class="slidertext">
-                <h3>oldnew<h3>
-                <p>Blah blah blahblahblahblahblah</p>
-              </div>
-            </li>
-            <li id="higraffiti_light" class="lightboxslides fadeanim">
-              <img src="higraffiti.jpg" alt="">
-              <div class="slidertext">
-                <h3>hi<h3>
-                <p>Blah blah blahblahblahblahblah</p>
-              </div>
-            </li>
-            <li id="gull_light" class="lightboxslides fadeanim">
-              <img src="gull.jpg" alt="">
-              <div class="slidertext">
-                <h3>gull<h3>
-                <p>Blah blah blahblahblahblahblah</p>
-              </div>
-            </li>
-            <li id="sunriseemei_light" class="lightboxslides fadeanim">
-              <img src="sunriseemei.jpg" alt="">
-              <div class="slidertext">
-                <h3>sunrise<h3>
-                <p>Blah blah blahblahblahblahblah</p>
+                <p>Fresh moss growing neara riverbed near Mount Cook, NZ</p>
               </div>
             </li>
             <li id="beach_light" class="lightboxslides fadeanim">
               <img src="beach.jpg" alt="">
               <div class="slidertext">
                 <h3>Beach<h3>
-                <p>Blah blah blahblahblahblahblah</p>
+                <p>Stopping to stretch out legs in south west Scotland</p>
               </div>
             </li>
             <li id="writing_light" class="lightboxslides fadeanim">
               <img src="writing.jpg" alt="">
               <div class="slidertext">
-                <h3>writing<h3>
-                <p>Blah blah blahblahblahblahblah</p>
+                <h3>Brush strokes<h3>
+                <p>Passing on to the next generation</p>
               </div>
             </li>
             <li id="church1_light" class="lightboxslides fadeanim">
               <img src="church1.jpg" alt="">
               <div class="slidertext">
-                <h3>church<h3>
-                <p>Blah blah blahblahblahblahblah</p>
+                <h3>Cathedral<h3>
+                <p>Gloucester Cathedral in the evening</p>
               </div>
             </li>
             <li id="daffodil_light" class="lightboxslides fadeanim">
               <img src="daffodil.jpg" alt="">
               <div class="slidertext">
-                <h3>daffodil<h3>
-                <p>Blah blah blahblahblahblahblah</p>
+                <h3>Daffodil<h3>
+                <p>the first flowers of spring in Belfast</p>
               </div>
             </li>
             <li id="buddha1_light" class="lightboxslides fadeanim">
               <img src="buddha1.jpg" alt="">
               <div class="slidertext">
-                <h3>buddha<h3>
-                <p>Blah blah blahblahblahblahblah</p>
+                <h3>Buddha<h3>
+                <p>Samantabhadra at the top of Mount Emei</p>
               </div>
             </li>
             <li id="lake_light" class="lightboxslides fadeanim">
               <img src="lake.jpg" alt="">
               <div class="slidertext">
-                <h3>lake<h3>
-                <p>Blah blah blahblahblahblahblah</p>
+                <h3>Lake<h3>
+                <p>A village surrounding a small lake on the way to the summit</p>
               </div>
             </li>
       </ul>
@@ -161,7 +226,7 @@
 </div>
 
 
-
+</div>
 
 
 <script src="designs.js"></script>
