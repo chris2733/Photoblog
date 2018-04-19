@@ -189,9 +189,11 @@ function showsidebar() {
 }
 $("#hamburgermenu").click(showsidebar);
 
-$("#hamburgermenu").hide();
+
 function showhamburgermenu() {
-  $("#hamburgermenu").show();
+  $("#hamburgermenu").animate({
+    opacity: 1
+  },1500);
 }
 
 // function setting up page - title, columns and menu

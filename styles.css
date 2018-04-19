@@ -258,7 +258,7 @@ svg {
 
 /* final animation, move photo up to middle and expand photocontainer2 to fill window, since photo has an animtion already */
 .fillwindow {
-   animation: photobig 1.4s cubic-bezier(0.895, 0.03, 0.685, 0.22) both;
+   animation: photobig 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) both;
 }
 @keyframes photobig {
    from {
@@ -313,6 +313,7 @@ svg {
   box-sizing: border-box;
   padding: 20px;
   border-radius: 50%;
+  opacity: 0;
 }
 #hamburgermenu #innermenu {
   position: absolute;
@@ -331,30 +332,49 @@ svg {
 }
 
 
+
 /* the popout menu when you click the hamburger */
 #sidemenu {
   position: fixed;
   left: -200px;
   top: 0;
   width: 200px;
+  min-width: 100px;
   height: 100%;
-  background-color: rgba(168, 168, 168, 0.9);
+  background-color: rgba(165, 165, 165, 0.95);
   z-index: 8;
   display: none;
 }
 #sidemenu ul {
   position: relative;
-  margin-top: 100px;
-  left: 20%;
-  font-family: arial;
-  font-size: 1.5em;
+  margin-top: 60%;
+  font-family: Calibri;
+  font-size: 150%;
   font-weight: 700;
-  color: rgba(26, 26, 26, 0.9);
+  color: rgba(70, 92, 122, 0.8);
   list-style-type: none;
-  line-height: 2.5rem;
-  width: 0;
+  line-height: 4rem;
+  width: 100%;
 }
-
+#sidemenu ul li {
+  box-sizing: border-box;
+  padding: 3% 15%;
+  text-decoration: none;
+}
+#sidemenu ul li:not(:hover) {
+  background-color: rgba(165, 165, 165, 0.95);
+  color: rgba(70, 92, 122, 0.8);
+  transition: 100ms linear;
+}
+#sidemenu ul li:hover {
+  background-color: rgba(70, 92, 122, 0.8);
+  color: rgba(165, 165, 165, 0.95);
+  transition: 100ms linear;
+}
+#sidemenu ul a {
+  color: rgba(70, 92, 122, 0.8);
+  text-decoration: none !important;
+}
 .slidesidemenuout {
 	-webkit-animation: slideout 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 	        animation: slideout 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
