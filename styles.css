@@ -121,7 +121,7 @@ svg {
 }
 /* function for elements popping in from centre */
 .popinxy {
-	        animation: popinxy 0.5s cubic-bezier(.44,.28,.65,1.27);
+	 animation: popinxy 0.5s cubic-bezier(.44,.28,.65,1.27);
    display: initial;
 }
 @keyframes popinxy {
