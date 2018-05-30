@@ -1,5 +1,6 @@
 
-// landing page
+// ------------------- landing page
+
 //hide everything initially
 $("path").addClass("hide");
 
@@ -74,7 +75,6 @@ function flashpressmove() {
    $("#orangerecttop1").toggleClass("flashpress");
 }
 
-
 // creating function to move photodown then click
 function movephoto() {
       $("#photograph").toggleClass("movephotodown");
@@ -113,7 +113,7 @@ function cameraanimation() {
    setTimeout(photobig, 3000);
 }
 
-
+// --------------landing page end
 
 
 
